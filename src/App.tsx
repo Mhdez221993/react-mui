@@ -1,11 +1,11 @@
 import "./App.css";
 
-import MuiSwitch from "./components/MuiSwitch";
+import MuiRating from "./components/MuiRating";
 
 function App() {
   return (
     <div className="App">
-      <MuiSwitch />
+      <MuiRating />
     </div>
   );
 }
