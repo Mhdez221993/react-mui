@@ -1,11 +1,11 @@
 import "./App.css";
 
-import MuiTextField from "./components/MuiTextField";
+import MuiSelect from "./components/MuiSelect";
 
 function App() {
   return (
     <div className="App">
-      <MuiTextField />
+      <MuiSelect />
     </div>
   );
 }
