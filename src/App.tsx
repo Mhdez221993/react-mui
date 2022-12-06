@@ -1,11 +1,11 @@
 import "./App.css";
 
-import MuiRating from "./components/MuiRating";
+import MuiAutocomplete from "./components/MuiAutocomplete";
 
 function App() {
   return (
     <div className="App">
-      <MuiRating />
+      <MuiAutocomplete />
     </div>
   );
 }
