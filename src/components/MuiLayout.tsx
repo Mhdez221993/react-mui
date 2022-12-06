@@ -1,8 +1,8 @@
-import { Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 
 const MuiLayout = () => {
   return (
-    <>
+    <Stack sx={{ border: "1px solid" }} direction="row-reverse" spacing={2}>
       <Box
         sx={{
           backgroundColor: "primary.main",
@@ -23,7 +23,7 @@ const MuiLayout = () => {
         bgcolor="success.light"
         p={2}
       ></Box>
-    </>
+    </Stack>
   );
 };
 
