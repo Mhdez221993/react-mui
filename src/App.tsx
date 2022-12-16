@@ -1,11 +1,11 @@
 import "./App.css";
 
-import { MuiImageList } from "./components/MuiImageList";
+import { MuiNavbar } from "./components/MuiNavbar";
 
 function App() {
   return (
     <div className="App">
-      <MuiImageList />
+      <MuiNavbar />
     </div>
   );
 }
