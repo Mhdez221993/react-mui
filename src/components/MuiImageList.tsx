@@ -14,6 +14,23 @@ export const MuiImageList = () => {
           </ImageListItem>
         ))}
       </ImageList>
+
+      <ImageList
+        sx={{ width: 500, height: 450 }}
+        cols={3}
+        gap={3}
+        variant="woven"
+      >
+        {itemData2.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              src={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2`}
+              alt={item.title}
+              loading="lazy"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
     </Stack>
   );
 };
