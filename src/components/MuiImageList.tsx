@@ -1,4 +1,10 @@
-import { Box, ImageList, ImageListItem, Stack } from "@mui/material";
+import {
+  Box,
+  ImageList,
+  ImageListItem,
+  ImageListItemBar,
+  Stack,
+} from "@mui/material";
 
 export const MuiImageList = () => {
   return (
@@ -11,6 +17,7 @@ export const MuiImageList = () => {
               alt={item.title}
               loading="lazy"
             />
+            <ImageListItemBar title={item.title} />
           </ImageListItem>
         ))}
       </ImageList>
