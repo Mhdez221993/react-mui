@@ -1,4 +1,4 @@
-import { ImageList, ImageListItem, Stack } from "@mui/material";
+import { Box, ImageList, ImageListItem, Stack } from "@mui/material";
 
 export const MuiImageList = () => {
   return (
@@ -31,6 +31,20 @@ export const MuiImageList = () => {
           </ImageListItem>
         ))}
       </ImageList>
+
+      <Box sx={{ width: 500, height: 450, overflowY: "scroll" }}>
+        <ImageList cols={3} gap={8} variant="masonry">
+          {itemData3.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=164&fit=crop&auto=format&dpr=2`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </Box>
     </Stack>
   );
 };
