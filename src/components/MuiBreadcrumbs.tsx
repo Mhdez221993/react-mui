@@ -5,7 +5,12 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 export const MuiBreadcrumbs = () => {
   return (
     <Box m={2}>
-      <Breadcrumbs aria-label="breadcrumbs" separator={<NavigateNextIcon />}>
+      <Breadcrumbs
+        aria-label="breadcrumbs"
+        separator={<NavigateNextIcon />}
+        maxItems={3}
+        itemsAfterCollapse={2}
+      >
         <Link href="#" underline="hover">
           Home
         </Link>
