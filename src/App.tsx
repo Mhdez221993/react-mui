@@ -3,6 +3,7 @@ import "./App.css";
 import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 import { MuiDrawer } from "./components/MuiDrawer";
 import { MuiNavbar } from "./components/MuiNavbar";
+import { MuiSpeedDial } from "./components/MuiSpeedDial";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <MuiNavbar />
       <MuiBreadcrumbs />
       <MuiDrawer />
+      <MuiSpeedDial />
     </div>
   );
 }
