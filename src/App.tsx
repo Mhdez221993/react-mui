@@ -1,11 +1,11 @@
 import "./App.css";
 
-import { MuiList } from "./components/MuiList";
+import { MuiChip } from "./components/MuiChip";
 
 function App() {
   return (
     <div className="App">
-      <MuiList />
+      <MuiChip />
     </div>
   );
 }
