@@ -1,11 +1,11 @@
 import "./App.css";
 
-import { MuiAvatar } from "./components/MuiAvatar";
+import { MuiBadge } from "./components/MuiBadge";
 
 function App() {
   return (
     <div className="App">
-      <MuiAvatar />
+      <MuiBadge />
     </div>
   );
 }
