@@ -1,11 +1,11 @@
 import "./App.css";
 
-import { MuiAlert } from "./components/MuiAlert";
+import { MuiSnackbar } from "./components/MuiSnackbar";
 
 function App() {
   return (
     <div className="App">
-      <MuiAlert />
+      <MuiSnackbar />
     </div>
   );
 }
