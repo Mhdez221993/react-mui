@@ -1,12 +1,16 @@
 import "./App.css";
 
-import { MuiLoadingButton } from "./components/MuiLoadingButton";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { MuiDateTimePicker } from "./components/MuiDateTimePiker";
 
 function App() {
   return (
-    <div className="App">
-      <MuiLoadingButton />
-    </div>
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
+      <div className="App">
+        <MuiDateTimePicker />
+      </div>
+    </LocalizationProvider>
   );
 }
 
