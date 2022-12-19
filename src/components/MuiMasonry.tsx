@@ -1,5 +1,13 @@
-import { Box, Paper } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box,
+  Paper,
+  Typography,
+} from "@mui/material";
 
+import { ExpandMore } from "@mui/icons-material";
 import { Masonry } from "@mui/lab";
 
 const heights = [
@@ -14,14 +22,19 @@ export const MuiMasonry = () => {
           <Paper
             key={index}
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              height,
+              // display: "flex",
+              // justifyContent: "center",
+              // alignItems: "center",
+              // height,
               border: "1px solid",
             }}
           >
-            {index + 1}
+            <Accordion sx={{ minHeight: height }}>
+              <AccordionSummary expandIcon={<ExpandMore />}>
+                <Typography>Accordion {index + 1}</Typography>
+              </AccordionSummary>
+              <AccordionDetails>Content</AccordionDetails>
+            </Accordion>
           </Paper>
         ))}
       </Masonry>
