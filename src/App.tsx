@@ -1,11 +1,11 @@
 import "./App.css";
 
-import { MuiProgress } from "./components/MuiProgress";
+import { MuiSkeleton } from "./components/MuiSkeleton";
 
 function App() {
   return (
     <div className="App">
-      <MuiProgress />
+      <MuiSkeleton />
     </div>
   );
 }
