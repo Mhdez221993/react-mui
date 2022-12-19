@@ -12,7 +12,7 @@ export const MuiResponsiveness = () => {
           lg: 400, // 1200
           xl: 500, // 1536
         },
-        bgcolor: "primary.main",
+        bgcolor: "secondary.main",
       }}
     ></Box>
   );
