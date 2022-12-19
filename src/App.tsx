@@ -2,13 +2,13 @@ import "./App.css";
 
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers";
-import { MuiMasonry } from "./components/MuiMasonry";
+import { MuiResponsiveness } from "./components/MuiResponsiveness";
 
 function App() {
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <div className="App">
-        <MuiMasonry />
+        <MuiResponsiveness />
       </div>
     </LocalizationProvider>
   );
