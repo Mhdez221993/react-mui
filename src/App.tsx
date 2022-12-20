@@ -7,9 +7,14 @@ import { LocalizationProvider } from "@mui/x-date-pickers";
 import { MuiResponsiveness } from "./components/MuiResponsiveness";
 
 const theme = createTheme({
+  status: { danger: "#e53e3e" },
   palette: {
     secondary: {
       main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+      darker: colors.grey[700],
     },
   },
 });
